@@ -2,7 +2,6 @@ node{
 
    def tomcatWeb = 'C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps'
    def tomcatBin = 'C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\bin'
-   def M2_HOME = 'C:\\Program Files\\Apache Software Foundation\\apache-maven-3.8.1'
    def tomcatStatus = ''
    stage('SCM Checkout'){
      git 'https://github.com/akshay-hingarajiya/HelloWorld.git'
