@@ -1,7 +1,7 @@
 node{
 
-   def tomcatWeb = 'C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps'
-   def tomcatBin = 'C:\Program Files\Apache Software Foundation\Tomcat 9.0\bin'
+   def tomcatWeb = 'C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps'
+   def tomcatBin = 'C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\bin'
    def tomcatStatus = ''
    stage('SCM Checkout'){
      git 'https://github.com/akshay-hingarajiya/HelloWorld.git'
@@ -28,7 +28,7 @@ node{
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
-         bat "${tomcatBin}\\startup"
+         bat "${tomcatBin}\startup"
          sleep(time:100,unit:"SECONDS")
    }
 }
