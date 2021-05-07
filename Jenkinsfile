@@ -4,7 +4,7 @@ node{
    def tomcatBin = 'C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\bin'
    def tomcatStatus = ''
    stage('SCM Checkout'){
-     git 'https://github.com/sivajavatechie/JenkinsWar.git'
+     git 'https://github.com/akshay-hingarajiya/HelloWorld.git'
    }
    stage('Compile-Package-create-war-file'){
       // Get maven home path
@@ -28,7 +28,7 @@ node{
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
-         bat "${tomcatBin}\\startup.bat"
+         bat \"${tomcatBin}\\startup.bat"
          sleep(time:100,unit:"SECONDS")
    }
 }
