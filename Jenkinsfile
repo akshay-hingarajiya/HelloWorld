@@ -1,7 +1,7 @@
 node{
 
-   def tomcatWeb = 'C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps'
-   def tomcatBin = 'C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\bin'
+   def tomcatWeb = 'C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps'
+   def tomcatBin = 'C:\Program Files\Apache Software Foundation\Tomcat 9.0\bin'
    def tomcatStatus = ''
    stage('SCM Checkout'){
      git 'https://github.com/akshay-hingarajiya/HelloWorld.git'
