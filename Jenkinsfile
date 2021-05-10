@@ -41,6 +41,6 @@ node{
    stage('artifects report')
    {
       "{mvnHome}/bin/mvn clean package"
-      archiveArtifacts allowEmptyArchive: true, artifacts: '.jenkins/workspace/PipeLineDemo/target/*.war', followSymlinks: false
+      archiveArtifacts allowEmptyArchive: true, artifacts: '.jenkins/workspace/PipeLineDemo/target/**/*.WAR', followSymlinks: false
    }
 }
