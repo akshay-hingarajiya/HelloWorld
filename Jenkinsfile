@@ -33,4 +33,9 @@ node{
          "${tomcatBin}\\startup.bat"
          sleep(time:100,unit:"SECONDS")
    }
+      stage('test case and report')
+   {
+      junit allowEmptyResults: true, testResults: 'C:\\Users\\AK\\.jenkins\\workspace\\PipeLineDemo\\target\\site\\surefire-report\\*.xml'
+      publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'C:\\Users\\AK\\.jenkins\\workspace\\PipeLineDemo\\target\\site', reportFiles: 'surefire-report.html', reportName: 'SureFireReportHTML', reportTitles: ''])
+   }
 }
