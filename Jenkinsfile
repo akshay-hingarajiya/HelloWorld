@@ -40,7 +40,7 @@ node{
    }
    stage('artifects report')
    {
-      bat "{mvnHome}/bin/mvn clean package"
+      "{mvnHome}/bin/mvn clean package"
       archiveArtifacts allowEmptyArchive: true, artifacts: '.jenkins/workspace/PipeLineDemo/target/**/*.war', followSymlinks: false
    }
 }
