@@ -32,14 +32,5 @@ node{
          "${tomcatBin}\\startup.bat"
          sleep(time:10,unit:"SECONDS")
    }
-      stage('test case and report')
-   {
-      junit allowEmptyResults: true, testResults: 'C:\\Users\\AK\\.jenkins\\workspace\\PipeLineDemo\\target\\site\\surefire-report\\*.xml'
-      publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'C:\\Users\\AK\\.jenkins\\workspace\\PipeLineDemo\\target\\site', reportFiles: 'surefire-report.html', reportName: 'SureFireReportHTML', reportTitles: ''])
-   }
-   stage('artifects report')
-   {
-      "{mvnHome}/bin/mvn clean package"
-      archiveArtifacts allowEmptyArchive: true, artifacts: '.jenkins/workspace/PipeLineDemo/target/JenkinsWar.war', followSymlinks: false
-   }
+    
 }
