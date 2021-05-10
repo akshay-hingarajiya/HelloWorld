@@ -38,9 +38,9 @@ node{
       junit allowEmptyResults: true, testResults: 'C:\\Users\\AK\\.jenkins\\workspace\\PipeLineDemo\\target\\site\\surefire-report\\*.xml'
       publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'C:\\Users\\AK\\.jenkins\\workspace\\PipeLineDemo\\target\\site', reportFiles: 'surefire-report.html', reportName: 'SureFireReportHTML', reportTitles: ''])
    }
-   stage('test case and report')
+   stage('artifects report')
    {
-      bat "{mvnHome}/bin/mvn clean package -DskipTests=true"
+      bat "{mvnHome}/bin/mvn clean package"
       archiveArtifacts allowEmptyArchive: true, artifacts: '.jenkins/workspace/PipeLineDemo/target/**/*.war', followSymlinks: false
    }
 }
