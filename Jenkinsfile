@@ -33,5 +33,9 @@ node{
          "${tomcatBin}\\startup.bat"
          sleep(time:10,unit:"SECONDS")
    }
+   stage('artifacts')
+   {
+      archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.war', followSymlinks: false
+   }
     
 }
