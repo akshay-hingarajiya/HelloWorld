@@ -22,10 +22,7 @@ public class JWebUnitTest {
     @Test
     public void testLoginPage() {
         beginAt("index.jsp"); 
-        assertTitleEquals("Login");
-        assertLinkPresent("home");
-        clickLink("home");
-        assertTitleEquals("Home");
+        assertTitleEquals("Hello AK");
     }
 
 }
