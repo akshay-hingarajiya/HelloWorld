@@ -35,7 +35,7 @@ node{
    }
    stage('artifacts')
    {
-      "${mvnHome}/bin/mvn clean package"
+      "${mvnHome}/bin/mvn clean package -DskipTests=true"
       archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.war', followSymlinks: false
    }
     
