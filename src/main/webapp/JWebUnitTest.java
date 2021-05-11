@@ -27,13 +27,5 @@ public class JWebUnitTest {
         clickLink("home");
         assertTitleEquals("Home");
     }
-     
-    @Test
-    public void testHomePage() {
-        beginAt("home.jsp"); 
-        assertTitleEquals("Home");
-        assertLinkPresent("login");
-        clickLink("login");
-        assertTitleEquals("Login");
-    }
+
 }
