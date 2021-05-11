@@ -35,7 +35,7 @@ node{
    }
    stage('artifacts')
    {
-      bat "${mvnHome}/bin/mvn clean package"
+      "${mvnHome}/bin/mvn clean package"
       archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.war', followSymlinks: false
    }
     
