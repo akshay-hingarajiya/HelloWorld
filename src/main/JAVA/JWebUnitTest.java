@@ -23,7 +23,7 @@ public class JWebUnitTest {
     }
  
  @BeforeAll
-void beforeClass()
+static void beforeClass()
 {
  system.out.println("running......beforeall");
 }
