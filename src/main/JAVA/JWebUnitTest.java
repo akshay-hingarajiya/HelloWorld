@@ -7,8 +7,7 @@ import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setTestingEngineKey;*/
 import net.sourceforge.jwebunit.junit.WebTester;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Test;
