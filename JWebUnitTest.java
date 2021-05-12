@@ -8,16 +8,25 @@ import static net.sourceforge.jwebunit.junit.JWebUnit.setTestingEngineKey;
  
 import org.junit.Before;
 import org.junit.Test;
+
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Test;
  
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
- 
- 
+
+
 public class JWebUnitTest {
     @Before
     public void prepare() {
         setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
         setBaseUrl("http://localhost:8081/junitwebapp");
     }
+ 
+ @BeforeAll
+void beforeClass()
+{
+ system.out.println("running......beforeall");
+}
  
     @Test
     public void testLoginPage() {
