@@ -39,10 +39,16 @@
 </dependency>
     
     <dependency>
-    <groupId>net.sourceforge.jwebunit</groupId>
+    <groupId>net.sourceforge.jwebunit.junit</groupId>
     <artifactId>jwebunit-htmlunit-plugin</artifactId>
     <version>3.3</version>
     <scope>test</scope>
+</dependency>
+    
+<dependency>
+    <groupId>net.sourceforge.jwebunit</groupId>
+    <artifactId>jwebunit-core</artifactId>
+    <version>2.5</version>
 </dependency>
     
   </dependencies>
