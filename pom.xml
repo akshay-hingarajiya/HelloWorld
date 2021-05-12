@@ -40,7 +40,7 @@
 </dependency>
     
     <dependency>
-    <groupId>net.sourceforge.jwebunit.junit.JWebUnit</groupId>
+    <groupId>net.sourceforge.jwebunit</groupId>
     <artifactId>jwebunit-htmlunit-plugin</artifactId>
     <version>3.3</version>
     <scope>test</scope>
