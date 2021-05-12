@@ -5,7 +5,8 @@ import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
 import static net.sourceforge.jwebunit.junit.JWebUnit.clickLink;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setTestingEngineKey;
- 
+import net.sourceforge.jwebunit.junit.WebTester;
+
 import org.junit.Before;
 import org.junit.Test;
 
