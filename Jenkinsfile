@@ -9,7 +9,7 @@ node{
    stage('Compile-Package-create-war-file'){
       // Get maven home path
       def mvnHome =  tool name: 'maven-3', type: 'maven'   
-      bat "${mvnHome}/bin/mvn clean test site"
+      bat "${mvnHome}/bin/mvn clean test"
       bat "${mvnHome}/bin/mvn package"
       archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.war', followSymlinks: false
       }
