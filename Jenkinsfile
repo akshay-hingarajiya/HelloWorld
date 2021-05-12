@@ -30,14 +30,14 @@ node{
       junit allowEmptyResults: true, testResults: '/target/*.xml'
       publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site', reportFiles: 'surefire-report.html', reportName: 'SureFireReportHtml', reportTitles: ''])
    }
-/*   stage('Deploy to Tomcat'){
+   stage('Deploy to Tomcat'){
      bat "copy target\\JenkinsWar.war \"${tomcatWeb}\\JenkinsWar.war\""
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
          "${tomcatBin}\\startup.bat"
          sleep(time:10,unit:"SECONDS")
-   }*/
+   }
    
    
     
