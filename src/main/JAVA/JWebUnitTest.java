@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
 
-public class JWebUnit {
+public class JWebUnitTest {
     @Before
     public void prepare() {
         setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
