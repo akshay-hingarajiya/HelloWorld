@@ -1,4 +1,4 @@
-package junitwebapp;
+package com.jenkins.demo;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
