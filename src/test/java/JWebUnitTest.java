@@ -1,3 +1,4 @@
+package net.sourceforge.jwebunit.tests;
 package JenkinsWar;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -14,7 +15,7 @@ import java.lang.annotation.Target;
 import org.junit.*;
 import java.util.Scanner;
 
-//import net.sourceforge.jwebunit.tests;
+
 import static net.sourceforge.jwebunit.junit.JWebUnit.*;
 import net.sourceforge.jwebunit.junit.WebTester;
 import org.junit.Before;
