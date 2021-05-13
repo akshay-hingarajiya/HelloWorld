@@ -1,4 +1,4 @@
-package com.jenkins.demo;
+package JenkinsWar;
 //import java.io.File;
 //import java.io.FileOutputStream;
 //import java.io.IOException;
@@ -11,13 +11,13 @@ package com.jenkins.demo;
 //import java.lang.annotation.Retention;
 //import java.lang.annotation.RetentionPolicy;
 //import java.lang.annotation.Target;
-//import org.junit.*;
+import org.junit.*;
 //import java.util.Scanner;
 //import static org.junit.Assert.*;
 import net.sourceforge.jwebunit.tests;
-//import static net.sourceforge.jwebunit.junit.jwebunit.*;
+import static net.sourceforge.jwebunit.junit.jwebunit.*;
 
-//import net.sourceforge.jwebunit.junit.WebTester;
+import net.sourceforge.jwebunit.junit.WebTester;
 import org.junit.Before;
 import org.junit.Test;
 
