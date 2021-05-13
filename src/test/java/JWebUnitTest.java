@@ -12,7 +12,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 //import org.junit.*;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 
 import static net.sourceforge.jwebunit.junit.JWebUnit.*;
