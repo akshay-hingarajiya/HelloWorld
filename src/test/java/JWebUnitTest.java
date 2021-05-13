@@ -1,4 +1,4 @@
-//package JenkinsWar;
+package JenkinsWar;
 //import java.io.File;
 //import java.io.FileOutputStream;
 //import java.io.IOException;
@@ -27,25 +27,20 @@ import org.junit.Test;
 //import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
 
-public class JWebUnitTest 
-{
-   @Before
-    public void prepare() 
-    {
-        setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
-        setBaseUrl("http://localhost:8081/junitwebapp");
-    }
- 
- @BeforeAll
-static void beforeClass()
-{
- System.out.println("running......beforeall");
-}
- 
-    @Test
-    public void testLoginPage() 
-    {
-        beginAt("index.jsp"); 
-        assertTitleEquals("Home");
-    }
+public class JWebUnitTest {
+	@Before
+	public void prepare() {
+		setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
+		setBaseUrl("http://localhost:8081/junitwebapp");
+	}
+
+	@Test
+	public void testLoginPage() {
+		beginAt("index.jsp"); 
+		//assertTitleEquals("Login");
+		assertLinkPresent("home");
+		//clickLink("home");
+		assertTitleEquals("Home");
+	}
+	
 }
