@@ -18,10 +18,11 @@ package net.sourceforge.jwebunit.tests;
 //import static net.sourceforge.jwebunit.junit.jwebunit.*;
 
 //import net.sourceforge.jwebunit.junit.WebTester;
+import org.junit.Before;
+import org.junit.Test;
 
-
-import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.*;
+//import org.junit.jupiter.api.Test;
  
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
