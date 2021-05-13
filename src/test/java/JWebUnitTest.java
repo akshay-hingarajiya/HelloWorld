@@ -1,21 +1,21 @@
 package JenkinsWar;
-//import java.io.File;
-//import java.io.FileOutputStream;
-//import java.io.IOException;
-//import java.io.InputStream;
-//import java.net.URL;
-//import org.junit.*;
-//import static org.junit.Assert.*;
-//import java.util.*;
-//import java.lang.annotation.ElementType;
-//import java.lang.annotation.Retention;
-//import java.lang.annotation.RetentionPolicy;
-//import java.lang.annotation.Target;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 import org.junit.*;
-//import java.util.Scanner;
-//import static org.junit.Assert.*;
+import static org.junit.Assert.*;
+import java.util.*;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import org.junit.*;
+import java.util.Scanner;
+
 import net.sourceforge.jwebunit.tests;
-import static net.sourceforge.jwebunit.junit.jwebunit.*;
+import static net.sourceforge.jwebunit.junit.JWebUnit.*;
 
 import net.sourceforge.jwebunit.junit.WebTester;
 import org.junit.Before;
