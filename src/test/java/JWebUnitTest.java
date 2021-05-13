@@ -29,8 +29,8 @@ import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 public class JWebUnitTest {
 	@Before
 	public void prepare() {
-		 WebDriver driver = new FirefoxDriver()
-    		driver.get("http://http://localhost:9090/JenkinsWar")
+		 WebDriver driver = new FirefoxDriver();
+    		driver.get("http://http://localhost:9090/JenkinsWar");
 		setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
 		setBaseUrl("http://http://localhost:9090/JenkinsWar");
 	}
