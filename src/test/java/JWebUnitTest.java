@@ -16,7 +16,7 @@ import java.lang.annotation.Target;
 
 
 import static net.sourceforge.jwebunit.junit.JWebUnit.*;
-import net.sourceforge.jwebunit.junit.WebTester;
+//import net.sourceforge.jwebunit.junit.WebTester;
 import org.junit.Before;
 import org.junit.Test;
 
