@@ -5,12 +5,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import net.sourceforge.jwebunit.junit.JWebUnit;
+/*
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
 import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
 import static net.sourceforge.jwebunit.junit.JWebUnit.clickLink;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setTestingEngineKey;
+*/
 import net.sourceforge.jwebunit.junit.WebTester;
 
 import org.junit.*;
