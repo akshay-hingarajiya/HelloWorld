@@ -36,11 +36,11 @@ import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
 
 public class JWebUnitTest {
-  /*  @Before
+    @Before
     public void prepare() {
         setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
         setBaseUrl("http://localhost:8081/junitwebapp");
-    }*/
+    }
  
  @BeforeAll
 static void beforeClass()
