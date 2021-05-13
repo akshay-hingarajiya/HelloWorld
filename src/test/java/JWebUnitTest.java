@@ -13,9 +13,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import static org.junit.jupiter.api.Assertions.fail;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
-import net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
 
-import net.sourceforge.jwebunit.junit.JWebUnit;
+import static net.sourceforge.jwebunit.junit.JWebUnit;
 /*
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
