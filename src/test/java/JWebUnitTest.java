@@ -5,7 +5,7 @@ package JenkinsWar;
 //import java.io.InputStream;
 //import java.net.URL;
 //import org.junit.*;
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 //import java.util.*;
 //import java.lang.annotation.ElementType;
 //import java.lang.annotation.Retention;
@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 package net.sourceforge.jwebunit.tests;
 //import static net.sourceforge.jwebunit.junit.jwebunit.*;
 
-import net.sourceforge.jwebunit.junit.WebTester;
+//import net.sourceforge.jwebunit.junit.WebTester;
 
 
 import org.junit.jupiter.api.*;
