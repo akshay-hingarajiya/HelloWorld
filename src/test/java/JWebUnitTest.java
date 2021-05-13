@@ -1,5 +1,5 @@
 package net.sourceforge.jwebunit.tests;
-package JenkinsWar;
+//package JenkinsWar;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
