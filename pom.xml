@@ -104,20 +104,24 @@
         </plugins>
     </reporting>
 	
-  <profiles>
-    <profile>
-      <repositories>
-        <repository>
-          <id>myRepo</id>
-          <name>My Repository</name>
-          <releases>
-            <enabled>false</enabled>
-            <updatePolicy>always</updatePolicy>
-            <checksumPolicy>warn</checksumPolicy>
-          </releases>
-         </repository>
-      </repositories>
-    </profile>
-  </profiles>
- 
+  <profile>
+  <id>nexus</id>
+  <repositories>
+    <repository>
+      <id>central</id>
+      <url>http://central</url>
+      <releases><enabled>true</enabled><updatePolicy>always</updatePolicy></releases>
+      <snapshots><enabled>true</enabled><updatePolicy>always</updatePolicy></snapshots>
+    </repository>
+  </repositories>
+ <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <url>http://central</url>
+      <releases><enabled>true</enabled><updatePolicy>always</updatePolicy></releases>
+      <snapshots><enabled>true</enabled><updatePolicy>always</updatePolicy></snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+</profile>
+
 </project>
