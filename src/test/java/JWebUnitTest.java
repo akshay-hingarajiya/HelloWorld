@@ -17,7 +17,7 @@ import org.junit.*;
 import java.util.Scanner;
 import static org.junit.Assert.*;
 package net.sourceforge.jwebunit.tests;
-import static net.sourceforge.jwebunit.junit.jwebunit.*;
+//import static net.sourceforge.jwebunit.junit.jwebunit.*;
 /*
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
@@ -37,7 +37,7 @@ import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
 public class JWebUnitTest 
 {
-   /* @Before
+   @Before
     public void prepare() 
     {
         setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
@@ -54,7 +54,6 @@ static void beforeClass()
     public void testLoginPage() 
     {
         beginAt("index.jsp"); 
-        assertTitleEquals("Hello AK");
+        assertTitleEquals("Home");
     }
-*/
 }
