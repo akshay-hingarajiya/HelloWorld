@@ -11,21 +11,12 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-//import static org.junit.jupiter.api.Assertions.fail;
-//import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import org.junit.*;
 import java.util.Scanner;
 import static org.junit.Assert.*;
 package net.sourceforge.jwebunit.tests;
 //import static net.sourceforge.jwebunit.junit.jwebunit.*;
-/*
-import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
-import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
-import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
-import static net.sourceforge.jwebunit.junit.JWebUnit.clickLink;
-import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
-import static net.sourceforge.jwebunit.junit.JWebUnit.setTestingEngineKey;
-*/
+
 import net.sourceforge.jwebunit.junit.WebTester;
 
 
