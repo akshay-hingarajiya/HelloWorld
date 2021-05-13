@@ -15,7 +15,7 @@ import java.lang.annotation.Target;
 //import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import java.util.Scanner;
 import static org.junit.Assert.*;
-import static net.sourceforge.jwebunit.junit.JWebUnit.*;
+import static net.sourceforge.jwebunit.junit.jwebunit.*;
 /*
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
