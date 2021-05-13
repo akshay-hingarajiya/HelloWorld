@@ -13,7 +13,7 @@ package JenkinsWar;
 //import java.lang.annotation.Target;
 //import org.junit.*;
 //import java.util.Scanner;
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 package net.sourceforge.jwebunit.tests;
 //import static net.sourceforge.jwebunit.junit.jwebunit.*;
 
