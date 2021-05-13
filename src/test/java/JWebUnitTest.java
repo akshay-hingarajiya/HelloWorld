@@ -36,6 +36,11 @@ public class JWebUnitTest {
 		//setBaseUrl("http://http://localhost:9090/JenkinsWar");
 	//}
 
+@BeforeAll
+static void beforeClass()
+{
+ System.out.println("running......beforeall");
+}
 	@Test
 	public void testLoginPage() {
 		beginAt("index.jsp"); 
