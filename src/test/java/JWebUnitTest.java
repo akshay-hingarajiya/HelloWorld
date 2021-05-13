@@ -14,7 +14,7 @@ package com.jenkins.demo;
 //import org.junit.*;
 //import java.util.Scanner;
 //import static org.junit.Assert.*;
-import net.sourceforge.jwebunit.tests.*;
+import net.sourceforge.jwebunit.tests;
 //import static net.sourceforge.jwebunit.junit.jwebunit.*;
 
 //import net.sourceforge.jwebunit.junit.WebTester;
