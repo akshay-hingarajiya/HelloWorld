@@ -13,7 +13,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import static org.junit.jupiter.api.Assertions.fail;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
-
+import java.util.Scanner;
 import net.sourceforge.jwebunit.junit.JWebUnit.*;
 /*
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
