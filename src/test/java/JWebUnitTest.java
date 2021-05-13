@@ -14,7 +14,7 @@ package JenkinsWar;
 //import org.junit.*;
 //import java.util.Scanner;
 //import static org.junit.Assert.*;
-//package net.sourceforge.jwebunit.tests;
+package net.sourceforge.jwebunit.tests;
 //import static net.sourceforge.jwebunit.junit.jwebunit.*;
 
 //import net.sourceforge.jwebunit.junit.WebTester;
@@ -24,7 +24,7 @@ import org.junit.Test;
 //import org.junit.jupiter.api.*;
 //import org.junit.jupiter.api.Test;
  
-import net.sourceforge.jwebunit.util.TestingEngineRegistry;
+//import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
 
 public class JWebUnitTest 
