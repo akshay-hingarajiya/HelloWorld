@@ -35,7 +35,7 @@ import org.junit.jupiter.api.Test;
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
 
-public class JWebUnitTest 
+public Class JWebUnitTest 
 {
    /* @Before
     public void prepare() 
