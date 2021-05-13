@@ -103,5 +103,21 @@
         </plugin>
         </plugins>
     </reporting>
-  
+	
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <id>myRepo</id>
+          <name>My Repository</name>
+          <releases>
+            <enabled>false</enabled>
+            <updatePolicy>always</updatePolicy>
+            <checksumPolicy>warn</checksumPolicy>
+          </releases>
+         </repository>
+      </repositories>
+    </profile>
+  </profiles>
+ 
 </project>
