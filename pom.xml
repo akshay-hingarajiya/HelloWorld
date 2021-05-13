@@ -103,7 +103,8 @@
         </plugin>
         </plugins>
     </reporting>
-	
+
+<profiles>
   <profile>
   <id>nexus</id>
   <repositories>
@@ -123,5 +124,6 @@
     </pluginRepository>
   </pluginRepositories>
 </profile>
+</profiles>
 
 </project>
