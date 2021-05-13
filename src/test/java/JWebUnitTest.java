@@ -36,9 +36,9 @@ public class JWebUnitTest {
 	@Test
 	public void testLoginPage() {
 		beginAt("index.jsp"); 
-		//assertTitleEquals("Login");
+		assertTitleEquals("Login");
 		assertLinkPresent("home");
-		//clickLink("home");
+		clickLink("home");
 		assertTitleEquals("Home");
 	}
 	
