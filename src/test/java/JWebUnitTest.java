@@ -7,10 +7,10 @@ import java.net.URL;
 //import org.junit.*;
 import static org.junit.Assert.*;
 import java.util.*;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+//import java.lang.annotation.ElementType;
+//import java.lang.annotation.Retention;
+//import java.lang.annotation.RetentionPolicy;
+//import java.lang.annotation.Target;
 //import org.junit.*;
 //import java.util.Scanner;
 
