@@ -72,7 +72,7 @@
         </resource>
       </resources>
 	  
-	  <sourceDirectory>src/main/webapp/index.jsp</sourceDirectory>
+	  <sourceDirectory>src/main/webapp</sourceDirectory>
 	  
         <plugins>
             <plugin>
