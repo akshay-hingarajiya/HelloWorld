@@ -92,7 +92,7 @@
   </build>
   
 	<build>
-<sourceDirectory>src</sourceDirectory>
+<sourceDirectory>src{main,test}</sourceDirectory>
 
 	
 	<properties>
