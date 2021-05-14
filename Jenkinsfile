@@ -26,12 +26,6 @@ node{
 '''
    }*/
    
-   stage('test case and report')
-   {
-      junit allowEmptyResults: true, testResults: '/target/*.xml'
-      publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site', reportFiles: 'surefire-report.html', reportName: 'SureFireReportHtml', reportTitles: ''])
-   }
-   
    stage('Deploy to Tomcat'){
      bat "copy target\\JenkinsWar.war \"${tomcatWeb}\\JenkinsWar.war\""
    }
@@ -41,7 +35,10 @@ node{
          sleep(time:10,unit:"SECONDS")
    }
    
-   
-   
+   stage('test case and report')
+   {
+      junit allowEmptyResults: true, testResults: '/target/*.xml'
+      publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site', reportFiles: 'surefire-report.html', reportName: 'SureFireReportHtml', reportTitles: ''])
+   }  
     
 }
