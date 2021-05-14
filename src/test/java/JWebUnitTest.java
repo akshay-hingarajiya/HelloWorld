@@ -27,14 +27,15 @@ import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
 
 public class JWebUnitTest {
-	@Before
+	    private static final String WEBSITE_URL = "http://localhost:9090/JenkinsWar";
+	/*@Before
 	public void prepare() {
 		//setBaseUrl("http://http://localhost:9090/JenkinsWar");
 		// WebDriver driver = new FirefoxDriver();
     		//driver.get("http://http://localhost:9090/JenkinsWar");
 		setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
 		setBaseUrl("http://localhost:9090/JenkinsWar");
-	}
+	}*/
 
 @BeforeAll
 static void beforeClass()
