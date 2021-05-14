@@ -44,7 +44,7 @@ static void beforeClass()
 }
 	@Test
 	public void testLoginPage() {
-		beginAt("src/main/webapp/index.jsp"); 
+		beginAt("index.jsp"); 
 		assertTitleEquals("Login");
 		assertLinkPresent("home");
 		clickLink("home");
