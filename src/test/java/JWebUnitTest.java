@@ -33,7 +33,7 @@ public class JWebUnitTest {
 		// WebDriver driver = new FirefoxDriver();
     		//driver.get("http://http://localhost:9090/JenkinsWar");
 		setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
-		setBaseUrl("http://localhost:8080/JenkinsWar");
+		setBaseUrl("http://localhost:9090/JenkinsWar");
 	}
  
 	
@@ -44,7 +44,7 @@ static void beforeClass()
 }
 	@Test
 	public void testLoginPage() {
-		beginAt("index.jsp"); 
+		beginAt("/index.jsp"); 
 		assertTitleEquals("Login");
 		assertLinkPresent("home");
 		clickLink("home");
