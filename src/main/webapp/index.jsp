@@ -1,9 +1,8 @@
-
 <html>
 <head>
-<title>Home</title>
+<title>Login</title>
 </head>
 <body>
-<h3>Hello</h3>
+<a href="home.jsp" id="home">Go To Home</a>
 </body>
 </html>
