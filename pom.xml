@@ -68,7 +68,7 @@
 	 
 	  <resources>
         <resource>
-          <directory>src/test</directory>
+          <directory>src/test/java</directory>
         </resource>
       </resources>
 	  
