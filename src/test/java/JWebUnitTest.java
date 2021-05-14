@@ -28,7 +28,7 @@ import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
 public class JWebUnitTest {
 	@BeforeAll
-	public void prepare() {
+	static public void prepare() {
 		//setBaseUrl("http://http://localhost:9090/JenkinsWar");
 		// WebDriver driver = new FirefoxDriver();
     		//driver.get("http://http://localhost:9090/JenkinsWar");
@@ -38,7 +38,7 @@ public class JWebUnitTest {
  
 	
 @Before
-static void beforeClass()
+void beforeClass()
 {
  System.out.println("running......beforeall");
 }
