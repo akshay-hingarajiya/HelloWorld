@@ -65,8 +65,14 @@
   </dependencies>
   
   <build>
+	 
+	  <resources>
+        <resource>
+          <directory>src/test</directory>
+        </resource>
+      </resources>
 	  
-	  <sourceDirectory>src/{main,test}</sourceDirectory>
+	  <sourceDirectory>src/main/webapp/index.jsp</sourceDirectory>
 	  
         <plugins>
             <plugin>
