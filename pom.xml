@@ -68,11 +68,11 @@
 	 
 	  <resources>
         <resource>
-          <directory>src/test/java</directory>
+          <directory>src/main/webapp</directory>
         </resource>
       </resources>
 	  
-	  <sourceDirectory>src/main/webapp</sourceDirectory>
+	  <sourceDirectory>src/test/java</sourceDirectory>
 	  
         <plugins>
             <plugin>
