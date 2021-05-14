@@ -33,7 +33,7 @@ public class JWebUnitTest {
 		// WebDriver driver = new FirefoxDriver();
     		//driver.get("http://http://localhost:9090/JenkinsWar");
 		setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
-		setBaseUrl("http://http://localhost:9090/manager/html/");
+		setBaseUrl("http://localhost:9090/manager/html/");
 	}
  
 	
