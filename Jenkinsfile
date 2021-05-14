@@ -11,7 +11,7 @@ node{
       def mvnHome =  tool name: 'maven-3', type: 'maven'   
       bat "${mvnHome}/bin/mvn package"
       bat "${mvnHome}/bin/mvn clean surefire-report:report"
-      archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.war', followSymlinks: false
+     
       }
 /*   stage ('Stop Tomcat Server') {
                bat ''' @ECHO OFF
