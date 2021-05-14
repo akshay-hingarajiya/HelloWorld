@@ -66,7 +66,9 @@
   
   <build>
 	 
-	   <plugin>
+        <plugins>
+		
+		 <plugin>
             <groupId>org.glassfish</groupId>
             <artifactId>maven-embedded-glassfish-plugin</artifactId>
             <version>3.1.1</version>
@@ -100,8 +102,7 @@
                 </execution>
             </executions>
         </plugin>
-	 
-        <plugins>
+		
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
