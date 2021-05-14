@@ -16,7 +16,7 @@ import java.util.*;
 
 
 import static net.sourceforge.jwebunit.junit.JWebUnit.*;
-//import net.sourceforge.jwebunit.junit.WebTester;
+import net.sourceforge.jwebunit.junit.WebTester;
 import org.junit.Before;
 //import org.junit.Test;
 
@@ -36,7 +36,13 @@ public class JWebUnitTest {
 		setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
 		setBaseUrl("http://localhost:9090/JenkinsWar");
 	}*/
-
+ @Before
+    public void start() {
+        webTester = new WebTester();
+        webTester.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT);
+        webTester.getTestContext().setBaseUrl(WEBSITE_URL);
+    }
+	
 @BeforeAll
 static void beforeClass()
 {
