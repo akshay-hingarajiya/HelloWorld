@@ -27,21 +27,15 @@ import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
 
 public class JWebUnitTest {
-	    private static final String WEBSITE_URL = "http://localhost:9090/JenkinsWar";
-	/*@Before
+	@Before
 	public void prepare() {
 		//setBaseUrl("http://http://localhost:9090/JenkinsWar");
 		// WebDriver driver = new FirefoxDriver();
     		//driver.get("http://http://localhost:9090/JenkinsWar");
 		setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
 		setBaseUrl("http://localhost:8080/JenkinsWar");
-	}*/
- @Before
-    public void start() {
-        webTester = new WebTester();
-        webTester.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT);
-        webTester.getTestContext().setBaseUrl(WEBSITE_URL);
-    }
+	}
+ 
 	
 @BeforeAll
 static void beforeClass()
