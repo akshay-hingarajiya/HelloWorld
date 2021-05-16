@@ -101,7 +101,7 @@ public class JWebUnitTest extends TestCase {
 	}
 
 	public void testIndex() throws Exception {
-		request.setURI("/hello-world.jsp");
+		request.setURI("index.jsp");
 		response.parse(tester.getResponses(request.generate()));
 
 		assertTrue(response.getMethod() == null);
