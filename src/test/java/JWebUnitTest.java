@@ -93,7 +93,7 @@ public class JWebUnitTest extends TestCase {
 
 	public void setUp() throws Exception {
 		tester.setResourceBase("./src/main/webapp");
-		tester.addServlet(JspServlet.class, "*.jsp");
+		//tester.addServlet(JspServlet.class, "*.jsp");
 		tester.start();
 
 		request.setMethod("GET");
