@@ -38,7 +38,7 @@ import net.sourceforge.jwebunit.junit.WebTester;
 import junit.framework.TestCase;
 
 public class JWebUnitTest {
-	@Before
+	/*@Before
 	public void prepare() {
 		//setBaseUrl("http://http://localhost:9090/JenkinsWar");
 		// WebDriver driver = new FirefoxDriver();
@@ -46,19 +46,19 @@ public class JWebUnitTest {
 		setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
 		JWebUnit.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_WEBDRIVER); 
 		setBaseUrl("http://localhost:9090/JenkinsWar");
-	}
+	}*/
 	
 	private WebTester tester;
 
    @Before
     public void prepare() {
         tester = new WebTester();
-	tester.setResourceBase("./src/main/webapp");
+	//tester.setResourceBase("./src/main/webapp");
 	//tester.addServlet(jspServlet.class,"*.jsp");
 	tester.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
         tester.setBaseUrl("http://localhost:9090/JenkinsWar");
     }
- 
+
 	
 @BeforeAll
 static void beforeClass()
