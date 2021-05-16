@@ -31,7 +31,7 @@ import org.junit.jupiter.api.Test;
 
 import org.mortbay.jetty.testing.HttpTester;
 import org.apche.jasper.servlet.JspServlet;
-import org.mortbay.jetty.testing.ServletTester:
+import org.mortbay.jetty.testing.ServletTester;
 
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
