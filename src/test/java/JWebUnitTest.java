@@ -21,7 +21,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import org.junit.jupiter.api.*;
-//import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
  
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
