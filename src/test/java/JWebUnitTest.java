@@ -31,7 +31,8 @@ import org.junit.jupiter.api.Test;
  
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
-
+import net.sourceforge.jwebunit.junit.WebTestCase;
+import net.sourceforge.jwebunit.junit.WebTester;
 
 public class JWebUnitTest {
 	@Before
