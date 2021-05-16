@@ -29,9 +29,7 @@ import org.junit.Before;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Test;
 
-import org.mortbay.jetty.testing.HttpTester;
-//import org.apche.jasper.servlet.JspServlet;
-import org.mortbay.jetty.testing.ServletTester;
+
 
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
@@ -39,7 +37,7 @@ import net.sourceforge.jwebunit.junit.WebTestCase;
 import net.sourceforge.jwebunit.junit.WebTester;
 import junit.framework.TestCase;
 
-/*public class JWebUnitTest {
+public class JWebUnitTest {
 	@Before
 	public void prepare() {
 		//setBaseUrl("http://http://localhost:9090/JenkinsWar");
@@ -56,7 +54,7 @@ import junit.framework.TestCase;
     public void prepare() {
         tester = new WebTester();
 	tester.setResourceBase("./src/main/webapp");
-	tester.addServlet(jspServlet.class,"*.jsp");
+	//tester.addServlet(jspServlet.class,"*.jsp");
 	tester.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
         tester.setBaseUrl("http://localhost:9090/JenkinsWar");
     }
@@ -85,28 +83,4 @@ static void beforeClass()
 		tester.assertTitleEquals("Login");
 	}
 	
-}*/
-public class JWebUnitTest extends TestCase {
-	ServletTester tester = new ServletTester();
-	HttpTester request = new HttpTester();
-	HttpTester response = new HttpTester();
-
-	public void setUp() throws Exception {
-		tester.setResourceBase("./src/main/webapp");
-		//tester.addServlet(JspServlet.class, "*.jsp");
-		tester.start();
-
-		request.setMethod("GET");
-		request.setVersion("HTTP/1.0");
-	}
-
-	public void testIndex() throws Exception {
-		request.setURI("index.jsp");
-		response.parse(tester.getResponses(request.generate()));
-
-		assertTrue(response.getMethod() == null);
-		assertEquals(200, response.getStatus());
-		assertEquals("<html><body>Hello World</body></html>", response
-				.getContent());
-	}
 }
