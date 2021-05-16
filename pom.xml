@@ -87,7 +87,7 @@
   
   <build>
 	  
-	  	  <sourceDirectory>src</sourceDirectory>
+	  	  <sourceDirectory>src/main</sourceDirectory>
         <plugins>
 		
             <plugin>
