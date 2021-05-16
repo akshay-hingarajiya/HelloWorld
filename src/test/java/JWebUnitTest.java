@@ -14,6 +14,12 @@ import java.util.*;
 //import org.junit.*;
 //import java.util.Scanner;
 
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
+import com.gargoylesoftware.htmlunit.html.HtmlForm;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
+import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 
 import static net.sourceforge.jwebunit.junit.JWebUnit.*;
 import net.sourceforge.jwebunit.junit.WebTester;
