@@ -28,11 +28,16 @@ import org.junit.Before;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Test;
- 
+
+import org.mortbay.jetty.testing.HttpTester;
+import org.apche.jasper.servlet.JspServlet;
+import org.mortbay.jetty.testing.ServletTester:
+
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 import net.sourceforge.jwebunit.junit.WebTestCase;
 import net.sourceforge.jwebunit.junit.WebTester;
+import junit.framework.TestCase;
 
 public class JWebUnitTest {
 	/*@Before
