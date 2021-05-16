@@ -86,13 +86,7 @@ static void beforeClass()
 	}
 	
 }*/
-import junit.framework.TestCase;
-
-import org.apache.jasper.servlet.JspServlet;
-import org.mortbay.jetty.testing.HttpTester;
-import org.mortbay.jetty.testing.ServletTester;
-
-public class HelloWorldJspTest extends TestCase {
+public class JWebUnitTest extends TestCase {
 	ServletTester tester = new ServletTester();
 	HttpTester request = new HttpTester();
 	HttpTester response = new HttpTester();
