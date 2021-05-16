@@ -35,7 +35,7 @@ import net.sourceforge.jwebunit.junit.WebTestCase;
 import net.sourceforge.jwebunit.junit.WebTester;
 
 public class JWebUnitTest {
-	@Before
+	/*@Before
 	public void prepare() {
 		//setBaseUrl("http://http://localhost:9090/JenkinsWar");
 		// WebDriver driver = new FirefoxDriver();
@@ -43,7 +43,15 @@ public class JWebUnitTest {
 		setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
 		JWebUnit.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_WEBDRIVER); 
 		setBaseUrl("http://localhost:9090/JenkinsWar");
-	}
+	}*/
+	
+	private WebTester tester;
+
+    @Before
+    public void prepare() {
+        tester = new WebTester();
+        tester.setBaseUrl("http://localhost:9090/JenkinsWar");
+    }
  
 	
 @BeforeAll
@@ -53,20 +61,20 @@ static void beforeClass()
 }
 	@Test
 	public void testLoginPage() {
-		beginAt("/index.jsp"); 
-		assertTitleEquals("Login");
-		assertLinkPresent("home");
-		clickLink("home");
-		assertTitleEquals("Home");
+		tester.beginAt("/index.jsp"); 
+		tester.assertTitleEquals("Login");
+		tester.assertLinkPresent("home");
+		tester.clickLink("home");
+		tester.assertTitleEquals("Home");
 	}
 	
 	@Test
 	public void testHomePage() {
-		beginAt("home.jsp"); 
-		assertTitleEquals("Home");
-		assertLinkPresent("login");
-		clickLink("login");
-		assertTitleEquals("Login");
+		tester.beginAt("home.jsp"); 
+		tester.assertTitleEquals("Home");
+		tester.assertLinkPresent("login");
+		tester.clickLink("login");
+		tester.assertTitleEquals("Login");
 	}
 	
 }
