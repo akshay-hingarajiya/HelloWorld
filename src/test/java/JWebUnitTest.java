@@ -29,9 +29,9 @@ import org.junit.Before;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Test;
 
-import org.mortbay.jetty.testing.HttpTester;
-import org.apche.jasper.servlet.JspServlet;
-import org.mortbay.jetty.testing.ServletTester;
+//import org.mortbay.jetty.testing.HttpTester;
+//import org.apche.jasper.servlet.JspServlet;
+//import org.mortbay.jetty.testing.ServletTester;
 
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
@@ -56,7 +56,7 @@ public class JWebUnitTest {
     public void prepare() {
         tester = new WebTester();
 	tester.setResourceBase("./src/main/webapp");
-	tester.addServlet(jspServlet.class,"*.jsp");
+	//tester.addServlet(jspServlet.class,"*.jsp");
 	tester.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
         tester.setBaseUrl("http://localhost:9090/JenkinsWar");
     }
