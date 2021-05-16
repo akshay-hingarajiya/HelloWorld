@@ -86,7 +86,8 @@
   </dependencies>
   
   <build>
-	 
+	  
+	  	  <sourceDirectory>src/{main,test}</sourceDirectory>
         <plugins>
 		
             <plugin>
