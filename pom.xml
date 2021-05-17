@@ -71,7 +71,18 @@
   </dependencies>
   
   <build>
-	  	  
+	  	  <resources>
+		<resource>
+			<directory>src/main/webapp</directory>
+			<filtering>true</filtering>
+		</resource>
+	</resources>
+	<testResources>
+		<testResource>
+			<directory>src/test/java</directory>
+			<filtering>true</filtering>
+		</testResource>
+	</testResources>
         <plugins>
 		
             <plugin>
