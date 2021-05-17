@@ -73,13 +73,13 @@
   <build>
 	  	  <resources>
 		<resource>
-			<directory>src/main/webapp</directory>
+			<directory>src/main/webapp/resources</directory>
 			<filtering>true</filtering>
 		</resource>
 	</resources>
 	<testResources>
 		<testResource>
-			<directory>src/test/java</directory>
+			<directory>src/test/java/resources</directory>
 			<filtering>true</filtering>
 		</testResource>
 	</testResources>
