@@ -54,11 +54,11 @@ public class JWebUnitTest {
     }
 
 	
-/*@BeforeAll
+@BeforeAll
 static void beforeClass()
 {
  System.out.println("running......beforeall");
-}*/
+}
 	@Test
 	public void testLoginPage() {
 		tester.beginAt("index.jsp"); 
