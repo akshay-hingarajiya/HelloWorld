@@ -42,13 +42,13 @@ public class JWebUnitTest {
 		setBaseUrl("http://localhost:9090/JenkinsWar");
 	}*/
 	 
-
+ private WebTester tester;
    
    
     
 
    @Before
-    public void prepare() {
+    public void setUp() {
         tester = new WebTester();
 	//tester.setResourceBase("./src/main/webapp");
 	//tester.addServlet(jspServlet.class,"*.jsp");
