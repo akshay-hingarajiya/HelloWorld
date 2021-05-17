@@ -18,7 +18,7 @@ import java.util.*;
 import static net.sourceforge.jwebunit.junit.JWebUnit.*;
 import net.sourceforge.jwebunit.junit.WebTester;
 import org.junit.Before;
-//import org.junit.Test;
+import org.junit.Test;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Test;
