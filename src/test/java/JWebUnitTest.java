@@ -50,7 +50,7 @@ public class JWebUnitTest {
 	//tester.setResourceBase("./src/main/webapp");
 	//tester.addServlet(jspServlet.class,"*.jsp");
 	tester.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
-	tester.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_WEBDRIVER);    // use WebDriver
+	//tester.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_WEBDRIVER);    // use WebDriver
         tester.setBaseUrl("http://localhost:9090/JenkinsWar");
     }
 
