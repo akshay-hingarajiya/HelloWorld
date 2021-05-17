@@ -32,7 +32,7 @@ node{
          "${tomcatBin}\\startup.bat"
          sleep(time:10,unit:"SECONDS")
    }
-   stage('test case'
+   stage('test case')
          {
        bat "${mvnHome}/bin/mvn clean surefire-report:report"
        archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.war', followSymlinks: false
