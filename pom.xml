@@ -71,7 +71,7 @@
   </dependencies>
   
   <build>
-	  <sourceDirectory>src/main/{test/java/.java,webapp/.jsp}</sourceDirectory>
+	  <sourceDirectory>src/main/{java,webapp}</sourceDirectory>
 	  	  
         <plugins>
 		
