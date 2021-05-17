@@ -71,7 +71,7 @@
   </dependencies>
   
   <build>
-	  
+	  <sourceDirectory>src/main</sourceDirectory>
 	  	  
         <plugins>
 		
