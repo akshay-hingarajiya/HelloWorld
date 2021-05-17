@@ -59,7 +59,7 @@ static void beforeClass()
 {
  System.out.println("running......beforeall");
 }
-	@Test
+	/*@Test
 	public void testLoginPage() {
 		tester.beginAt("index.jsp"); 
 		tester.assertTitleEquals("Login");
@@ -75,6 +75,6 @@ static void beforeClass()
 		tester.assertLinkPresent("login");
 		tester.clickLink("login");
 		tester.assertTitleEquals("Login");
-	}
+	}*/
 	
 }
