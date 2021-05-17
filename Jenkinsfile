@@ -9,9 +9,7 @@ node{
    stage('Compile-Package-create-war-file'){
       // Get maven home path
       def mvnHome =  tool name: 'maven-3', type: 'maven' 
-       bat "${mvnHome}/bin/mvn clean surefire-report:report"
        bat "${mvnHome}/bin/mvn package"
-      archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.war', followSymlinks: false
       }
 /*   stage ('Stop Tomcat Server') {
                bat ''' @ECHO OFF
@@ -34,8 +32,12 @@ node{
          "${tomcatBin}\\startup.bat"
          sleep(time:10,unit:"SECONDS")
    }
-   
-   stage('test case and report')
+   stage('test case'
+         {
+       bat "${mvnHome}/bin/mvn clean surefire-report:report"
+       archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.war', followSymlinks: false
+         }
+   stage('report')
    {
       junit allowEmptyResults: true, testResults: '/target/*.xml'
       publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site', reportFiles: 'surefire-report.html', reportName: 'SureFireReportHtml', reportTitles: ''])
