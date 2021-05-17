@@ -41,8 +41,14 @@ public class JWebUnitTest {
 		JWebUnit.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_WEBDRIVER); 
 		setBaseUrl("http://localhost:9090/JenkinsWar");
 	}*/
-	
-	private WebTester tester;
+	  public static WebDriver driver=null;
+    Properties p = new Properties();   // create an object of properties
+
+    public jWebUnitTest(WebDriver driver){
+        this.driver=driver;
+
+    }
+    
 
    @Before
     public void prepare() {
