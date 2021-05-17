@@ -50,7 +50,7 @@ public class JWebUnitTest {
 	//tester.setResourceBase("./src/main/webapp");
 	//tester.addServlet(jspServlet.class,"*.jsp");
 	tester.setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
-        tester.setBaseUrl("http://localhost:8081");
+        tester.setBaseUrl("http://localhost:9090/JenkinsWar");
     }
 
 	
