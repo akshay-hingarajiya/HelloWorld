@@ -61,7 +61,7 @@ static void beforeClass()
 }
 	@Test
 	public void testLoginPage() {
-		//tester.beginAt("index.jsp"); 
+		tester.beginAt("index.jsp"); 
 		tester.assertTitleEquals("Login");
 		tester.assertLinkPresent("home");
 		tester.clickLink("home");
@@ -70,7 +70,7 @@ static void beforeClass()
 	
 	@Test
 	public void testHomePage() {
-		//tester.beginAt("home.jsp"); 
+		tester.beginAt("home.jsp"); 
 		tester.assertTitleEquals("Home");
 		tester.assertLinkPresent("login");
 		tester.clickLink("login");
